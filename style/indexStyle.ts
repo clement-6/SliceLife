@@ -1,4 +1,4 @@
- import { StyleSheet, TextStyle } from "react-native";
+ import { StyleSheet } from "react-native";
  
  const content  = {
     justifyContent: "center" as const,
@@ -6,30 +6,33 @@
  }
  
  export const indexStyle = StyleSheet.create({
-   
 
-    globalView: {
-         flex: 1,
-         ...content,
-         backgroundColor: "#f5f5dc", 
+   
+    image: {
+        flex: 1,       
+        ...content
     },
 
     //style pour la vue textue
     tabscontent: {
-
-       width: "95%",
-       height: "90%",
+       width: 350,
+       height: "88%",
        backgroundColor: "#fff",
-       borderRadius: 35, 
-         
+       borderRadius: 35,
+       opacity: 0.9
+    },
+
+    btnactive:{
+         backgroundColor: '#367cff'
     },
 
     //tsyle pour le texte en gors caractere
     title:{
-        fontWeight: "bold" ,
+        fontWeight: "600" ,
         textAlign: "center" ,
-        fontSize: 42.5,
+        fontSize: 35,
         color: '#367cff',
+        lineHeight: 50
 
     },
 
@@ -46,19 +49,25 @@
     viewbtn: {
         flexDirection: "row",
         justifyContent: "space-evenly",
+        marginTop: 72
+    
     },
 
     textbtn:{
         fontWeight: "bold",
+        fontSize: 16
     },
 
     btn:{
-        width: 120,
-        height: 40,
+        width: 130,
+        height: 50,
         ...content,
         fontSize: 30,
         borderRadius: 8,
-        backgroundColor: "#52be20",
+    },
+
+    texteactive: {
+        color: '#fff'
     }
     
 });
