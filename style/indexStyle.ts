@@ -13,15 +13,6 @@
         ...content
     },
 
-    //style pour la vue textue
-    tabscontent: {
-       width: 350,
-       height: "88%",
-       backgroundColor: "#fff",
-       borderRadius: 35,
-       opacity: 0.9
-    },
-
     btnactive:{
          backgroundColor: '#367cff'
     },
@@ -30,7 +21,7 @@
     title:{
         fontWeight: "600" ,
         textAlign: "center" ,
-        fontSize: 35,
+        fontSize: 40,
         color: '#367cff',
         lineHeight: 50
 
@@ -41,7 +32,7 @@
         fontFamily: 'Times New Roman',
         fontWeight:'100',
         textAlign: 'center',
-        fontSize: 13,
+        fontSize: 15,
         lineHeight: 20
     },
 
