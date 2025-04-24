@@ -7,10 +7,11 @@ export const commonStyle = StyleSheet.create({
 
     tabscontent: {
         width: 350,
-        height: "88%",
+        minHeight: "88%",
         backgroundColor: "#fff",
         borderRadius: 35,
-        opacity: 0.9
+        opacity: 0.95,
+        alignItems: "center",
      },
 
 })

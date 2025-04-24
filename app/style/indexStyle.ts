@@ -12,6 +12,15 @@
         flex: 1,       
         ...content
     },
+    image_header: {
+        width: 350, 
+        height: 300 
+    },
+
+    textView: {
+        gap:25, 
+        marginTop: 30
+    },
 
     btnactive:{
          backgroundColor: '#367cff'

@@ -1,8 +1,8 @@
 import  React,{useState} from "react";
-import { Text, TouchableOpacity, View, Image, ImageBackground } from "react-native";
-import { indexStyle } from "@/style/indexStyle";
-import { commonStyle } from "@/style/commonStyle";
-import { back } from "@/components/backImage";
+import { Text, TouchableOpacity, View, Image, ImageBackground, StatusBar } from "react-native";
+import { indexStyle } from "@/app/style/indexStyle";
+import { commonStyle } from "@/app/style/commonStyle";
+import { back } from "@/app/components/backImage";
 import { Link } from "expo-router";
 import * as Router from 'expo-router';
 
@@ -21,11 +21,12 @@ export default function Index() {
       resizeMode="cover"
       style={indexStyle.image}
     >
+      <StatusBar backgroundColor='#177dff'/>
       <View style={commonStyle.tabscontent}>
-        <View style={{ marginTop: 30 }}>
-          <Image style={{ width: 350, height: 300 }} source={image} />
+        <View style={{ marginTop: 25 }}>
+          <Image style={indexStyle.image_header} source={image} />
         </View>
-        <View style={{ gap:25, marginTop: 30}}>
+        <View style={indexStyle.textView}>
           <Text style={indexStyle.title}>Discover Your Dream Job here</Text>
           <Text style={indexStyle.text}>
             Explore all the existing job roles based on your interest and study
@@ -40,7 +41,7 @@ export default function Index() {
             ]}
             onPress={() => {
               setActiveButton("login");
-              router.navigate("/login");
+              router.navigate("/auth/login");
             }}
           >
             <Text
@@ -59,7 +60,7 @@ export default function Index() {
             ]}
             onPress={() => {
               setActiveButton("register");
-              router.navigate("/register");
+              router.navigate("/auth/register");
             }}
           >
             <Text
