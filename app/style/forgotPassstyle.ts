@@ -1,9 +1,11 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Dimensions } from "react-native"
+
+const {width} = Dimensions.get('window')
 
 export const forgotPassStyle = StyleSheet.create({
     tabscontent: {
         paddingTop: 30,
-        width: 350,
+        width: width * 0.9,
         minHeight: "50%",
         backgroundColor: "#fff",
         borderRadius: 35,

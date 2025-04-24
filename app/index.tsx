@@ -21,7 +21,7 @@ export default function Index() {
       resizeMode="cover"
       style={indexStyle.image}
     >
-      <StatusBar backgroundColor='#177dff'/>
+      <StatusBar backgroundColor='#dbedef'/>
       <View style={commonStyle.tabscontent}>
         <View style={{ marginTop: 25 }}>
           <Image style={indexStyle.image_header} source={image} />

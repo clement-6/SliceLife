@@ -49,7 +49,7 @@
     viewbtn: {
         flexDirection: "row",
         justifyContent: "space-evenly",
-        marginTop: 72
+       marginVertical: 50
     
     },
 

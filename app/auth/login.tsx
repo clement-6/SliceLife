@@ -37,7 +37,7 @@ export default function Login() {
 
                 <Text style={[loginStyle.accountText,loginStyle.smallSemiBold]} onPress={() => router.push('/auth/register')}>You don't have an account?</Text>
 
-                <View>
+                <View style={{transform: [{translateY: -40}]}}>
                   <Text style={[loginStyle.alterText,loginStyle.smallSemiBold]}>Or continue with</Text>
                 <View style={loginStyle.oauthcontaintView}>
                                     {oauthArray.map((item, index) => {

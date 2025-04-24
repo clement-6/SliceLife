@@ -9,7 +9,7 @@ export const loginStyle = StyleSheet.create({
     },
 
     viewTitle:{
-        marginTop: 25,
+        marginTop: 40,
         width: "100%",
         alignItems: "center",
         gap: 10
@@ -50,8 +50,8 @@ export const loginStyle = StyleSheet.create({
     },
 
     accountText:{
-        marginTop: 65
-    },
+       marginVertical: 30 
+     },
 
     smallSemiBold:{
         fontWeight: '600',
