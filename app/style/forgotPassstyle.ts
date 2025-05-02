@@ -4,9 +4,8 @@ const {width} = Dimensions.get('window')
 
 export const forgotPassStyle = StyleSheet.create({
     tabscontent: {
-        paddingTop: 30,
         width: width * 0.9,
-        minHeight: "50%",
+        minHeight: "70%",
         backgroundColor: "#fff",
         borderRadius: 35,
         opacity: 0.95,
@@ -19,4 +18,18 @@ export const forgotPassStyle = StyleSheet.create({
         alignItems: "center",
         gap: 30
     },
+
+    saisie:{
+       flexDirection: 'row',
+       alignItems: 'center',
+        marginTop: 40,
+    },
+
+
+    image_header: {
+        width: 180, 
+        height: 180 
+    },
+
+
 })

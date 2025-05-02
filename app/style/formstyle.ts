@@ -1,11 +1,17 @@
 import { StyleSheet } from "react-native";
+import { Colors } from "../constants/colors";
 
-export const loginStyle = StyleSheet.create({
+const content  = {
+    alignItems: "center" as const,
+    justifyContent: 'center' as const
+ }
+
+export const FormStyle = StyleSheet.create({
 
     textTitle: {
         fontSize: 30,
         fontWeight: "700",  
-        color: "#367cff",
+        color: Colors.commonColors,
     },
 
     viewTitle:{
@@ -28,7 +34,7 @@ export const loginStyle = StyleSheet.create({
     },
 
     input:{
-        borderColor: '#367cff',
+        borderColor: Colors.commonColors,
         width: 300,
         height: 50,
         borderRadius: 10,
@@ -38,11 +44,11 @@ export const loginStyle = StyleSheet.create({
 
     inputFocused: {
         borderWidth: 3,
-        borderColor: '#367cff'
+        borderColor: Colors.commonColors
     },
 
     forget:{
-        color: "#367cff",
+        color: Colors.commonColors,
         fontWeight: "bold",
         textAlign: "right",
         width: 290,
@@ -60,11 +66,10 @@ export const loginStyle = StyleSheet.create({
     },
 
     mybtn: {
-        backgroundColor: "#367cff",
+        backgroundColor: Colors.commonColors,
         width: 300,
         height: 60,
-        justifyContent: "center",
-        alignItems: "center",
+        ...content,
         borderRadius: 10
     },
 
@@ -81,8 +86,7 @@ export const loginStyle = StyleSheet.create({
         borderRadius: 8,
         height: 40,
         width: 50,
-        alignItems:'center',
-        justifyContent: 'center',
+        ...content
     },
 
     oauthcontaintView:{
@@ -93,7 +97,7 @@ export const loginStyle = StyleSheet.create({
     },
 
     alterText:{
-            color: '#367cff',
+            color: Colors.commonColors,
             marginTop: 65
 
     }

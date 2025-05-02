@@ -1,6 +1,6 @@
 import { View } from "react-native"
 import {  FontAwesome6 } from '@expo/vector-icons';
-import { loginStyle } from "../style/loginstyle";
+import { FormStyle } from "../style/formstyle";
 
 
 
@@ -11,7 +11,7 @@ interface OauthContainerProps{
 
 const OauthContainer = ({iconName}: OauthContainerProps) => {
     return(
-        <View style={loginStyle.oauthcontaint}>
+        <View style={FormStyle.oauthcontaint}>
            <FontAwesome6 name={iconName} size={18} color={'black'}/>
         </View>
     )

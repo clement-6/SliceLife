@@ -3,7 +3,6 @@ import { Text, TouchableOpacity, View, Image, ImageBackground, StatusBar } from 
 import { indexStyle } from "@/app/style/indexStyle";
 import { commonStyle } from "@/app/style/commonStyle";
 import { back } from "@/app/components/backImage";
-import { Link } from "expo-router";
 import * as Router from 'expo-router';
 
 
@@ -11,7 +10,7 @@ const image = require('../assets/images/Espace_Salarie.png');
 
 
 
-export default function Index() {
+export default function HomeScreen() {
   const [activeButton, setActiveButton] = useState("login");
   const router = Router.useRouter();
 

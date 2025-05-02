@@ -1,4 +1,5 @@
  import { StyleSheet } from "react-native";
+import { Colors } from "../constants/colors";
  
  const content  = {
     justifyContent: "center" as const,
@@ -23,7 +24,7 @@
     },
 
     btnactive:{
-         backgroundColor: '#367cff'
+         backgroundColor: Colors.commonColors
     },
 
     //tsyle pour le texte en gors caractere
@@ -31,7 +32,7 @@
         fontWeight: "600" ,
         textAlign: "center" ,
         fontSize: 40,
-        color: '#367cff',
+        color: Colors.commonColors,
         lineHeight: 50
 
     },

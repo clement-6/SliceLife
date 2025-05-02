@@ -1,10 +1,13 @@
-import { ImageBackground, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform } from "react-native";
+import { ImageBackground, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform, Image } from "react-native";
 import { indexStyle } from "@/app/style/indexStyle";
 import { back } from "@/app/components/backImage";
-import { loginStyle } from "@/app/style/loginstyle";
+import { FormStyle } from "@/app/style/formstyle";
 import { registerStyle } from "../style/registerStyle";
 import CustomInput from "../components/customInput";
 import { forgotPassStyle } from "../style/forgotPassstyle";
+import { FontAwesome6 } from '@expo/vector-icons';
+
+
 
 
 export default function ForgotPass(){
@@ -15,15 +18,17 @@ export default function ForgotPass(){
           resizeMode="cover"
           style={indexStyle.image}>
              <View style={forgotPassStyle.tabscontent}>
+              <Image source={back.FORGOT} style={forgotPassStyle.image_header}/>
               <View style={forgotPassStyle.viewTitle}>
-                <Text style={loginStyle.textTitle}>Forgot Password</Text>
+                <Text style={FormStyle.textTitle}>Forgot Password</Text>
                 <Text style={registerStyle.subTitle}>Provide the email address associated with your account to recover your password</Text>
               </View>
-              <View style={loginStyle.saisie}>
+              <View style={forgotPassStyle.saisie}> 
                 <CustomInput placeholder={"Email"} keyboardType="email-address"/>
+                <FontAwesome6 name="envelope" size={24} color="#465964" style={{position:"absolute", right:10}}/>
               </View>
-                <TouchableOpacity style={[loginStyle.mybtn,registerStyle.marginButon]}>
-                  <Text style={loginStyle.textbtn}>Send Email</Text>
+                <TouchableOpacity style={[FormStyle.mybtn,registerStyle.marginButon]}>
+                  <Text style={FormStyle.textbtn}>Send Email</Text>
                 </TouchableOpacity>
             </View>
         </ImageBackground>
