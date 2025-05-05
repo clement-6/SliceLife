@@ -15,7 +15,7 @@ export default function Register() {
 const router = Router.useRouter();
 
 
-    return (
+    return ( 
       <KeyboardAvoidingView style={{flex:1}} behavior={Platform.OS === "ios" ? "padding" : "height"}>
         <ImageBackground
           source={back.BLUEKMER}
@@ -23,22 +23,22 @@ const router = Router.useRouter();
           style={indexStyle.image}>
              <View style={commonStyle.tabscontent}>
               <View style={FormStyle.viewTitle}>
-                <Text style={FormStyle.textTitle}>Create Account</Text>
+                <Text style={FormStyle.textTitle} onPress={() => router.push('/auth/login')}>Create Account</Text>
                 <Text style={registerStyle.subTitle}>Create an account so you can explore all the existing jobs</Text>
               </View>
               <View style={FormStyle.saisie}>
-                <CustomInput placeholder={"Email"} keyboardType="email-address"/>
-                <CustomInput placeholder={"Password"} isSecure={true}/>
-                <CustomInput placeholder={"Confirm Password"} isSecure={true}/>
+                <CustomInput placeholder={"Email"} keyboardType="email-address" name="envelope"/>
+                <CustomInput placeholder={"Password"} isSecure={true} name="lock"/>
+                <CustomInput placeholder={"Confirm Password"} isSecure={true} name="lock"/>
               </View>
 
-                <TouchableOpacity style={[FormStyle.mybtn,registerStyle.marginButon]}>
-                  <Text style={FormStyle.textbtn}>Sign Up</Text>
+                <TouchableOpacity style={[FormStyle.mybtn,registerStyle.marginButon]} onPress={() => router.push('/screen/home')}>
+                  <Text style={FormStyle.textbtn} >Sign Up</Text>
                 </TouchableOpacity>
 
-                <Text style={[registerStyle.accountText,FormStyle.smallSemiBold]} onPress={() => router.push('/auth/login')}>Already have an account</Text>
+                <Text style={[registerStyle.accountText,FormStyle.smallSemiBold]} onPress={() => router.push('/auth/login')}>Already have an account!</Text>
 
-                <View style={{transform: [{translateY: -35}]}}>
+                <View style={{transform: [{translateY: Platform.OS === "ios" ? -24 : -15}]} }>
                   <Text style={[FormStyle.alterText,FormStyle.smallSemiBold]}>Or continue with</Text>
                 <View style={FormStyle.oauthcontaintView}>
                                     {oauthArray.map((item, index) => {

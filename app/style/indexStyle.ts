@@ -1,4 +1,4 @@
- import { StyleSheet } from "react-native";
+ import { StyleSheet, Platform } from 'react-native';
 import { Colors } from "../constants/colors";
  
  const content  = {
@@ -20,7 +20,8 @@ import { Colors } from "../constants/colors";
 
     textView: {
         gap:25, 
-        marginTop: 30
+        marginTop: 30,
+        alignItems: 'center'
     },
 
     btnactive:{
@@ -43,7 +44,8 @@ import { Colors } from "../constants/colors";
         fontWeight:'100',
         textAlign: 'center',
         fontSize: 15,
-        lineHeight: 20
+        width: Platform.OS === 'ios' ? 300 : 320,
+    
     },
 
 //bouton style

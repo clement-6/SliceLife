@@ -25,8 +25,8 @@ export default function Login() {
                 <Text style={FormStyle.subTitle}>Welcome back you've been missed!</Text>
               </View>
               <View style={FormStyle.saisie}>
-                <CustomInput placeholder={"Email"} keyboardType="email-address" />
-                <CustomInput placeholder={"Password"} isSecure={true} />
+                <CustomInput placeholder={"Email"} keyboardType="email-address" name="envelope"/>
+                <CustomInput placeholder={"Password"} isSecure={true} name="lock"/>
               </View>
 
                 <Text style={FormStyle.forget} onPress={() => router.push('/auth/forgotPass')}>Forgot your password?</Text>

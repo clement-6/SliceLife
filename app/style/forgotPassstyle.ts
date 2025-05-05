@@ -20,9 +20,8 @@ export const forgotPassStyle = StyleSheet.create({
     },
 
     saisie:{
-       flexDirection: 'row',
        alignItems: 'center',
-        marginTop: 40,
+        marginTop: 35,
     },
 
 

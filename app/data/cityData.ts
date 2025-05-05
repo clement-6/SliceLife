@@ -1,0 +1,23 @@
+export const CITY_DATA = 
+   [
+    { id: '1', title: 'Abidjan', source: require('../../assets/city/abidjan.jpg') },
+    { id: '2', title: 'accra', source: require('../../assets/city/accra.jpg')},
+    { id: '3', title: 'Addis Abeba',  source: require('../../assets/city/addis abeba.jpg')},
+    { id: '4', title: 'Alger', source: require('../../assets/city/alger.jpg')},
+    { id: '5', title: 'Annaba', source: require('../../assets/city/annaba.jpg')},
+    { id: '6', title: 'Caire', source: require('../../assets/city/caire.jpg')},
+    { id: '7', title: 'Cassablanca', source: require('../../assets/city/cassanblaca.jpg')},
+    { id: '8', title: 'Desse', source: require('../../assets/city/desse.jpg')},
+    { id: '9', title: 'Durban', source: require('../../assets/city/durban.jpg')},
+    { id: '10', title: 'Kampala', source: require('../../assets/city/kampala.jpg')},
+    { id: '11', title: 'Kigali', source: require('../../assets/city/kigali.jpg')},
+    { id: '12', title: 'Kinshasa', source: require('../../assets/city/kinshasa.jpg')},
+    { id: '13', title: 'Lagos', source: require('../../assets/city/Lagos.jpg')},
+    { id: '14', title: 'Luanda', source: require('../../assets/city/luanda.jpg')},
+    { id: '15', title: 'Marrakech', source: require('../../assets/city/marrakech.jpg')},
+    { id: '16', title: 'Nairobi', source: require('../../assets/city/nairobi.jpg')},
+    { id: '17', title: 'Pretoria', source: require('../../assets/city/pretoria.jpg')},
+    { id: '18', title: 'Tripoli', source: require('../../assets/city/tripoli.jpg')},
+    { id: '19', title: 'Tunis', source: require('../../assets/city/tunis.jpg')},
+    { id: '20', title: 'Yaounde', source: require('../../assets/city/yaounde.jpg')},
+  ];

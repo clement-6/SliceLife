@@ -1,6 +1,5 @@
-import { View, Text, Image,  ImageSourcePropType } from 'react-native'
+import { View, Text, Image,  ImageSourcePropType, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { FormStyle } from '../style/formstyle'
 import { homeStyle } from '../style/homeStyle';
 
 interface ItemPros{
@@ -12,12 +11,12 @@ interface ItemPros{
 
 const ItemComponent = ({item,source}:ItemPros) => {
   return (
-    <View style={{ borderStyle:"solid", borderWidth:1}}>
+    <TouchableOpacity style={{height: 160}}>
         <View style={homeStyle.oauthcontaint}>
-            <Image source={source} style={{width: 38, height: 38}}/>
+            <Image source={source} style={{width: 38, height: 38, backgroundColor: '#ECECEC'}}/>
         </View>
       <Text style={homeStyle.titleIcon} numberOfLines={1} ellipsizeMode='tail'>{item}</Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 

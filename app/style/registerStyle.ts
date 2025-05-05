@@ -11,7 +11,9 @@ export const registerStyle = StyleSheet.create({
     },
 
     accountText:{
-        marginTop: 20
+        marginTop: 20,
+        marginBottom: 10
+       
     },
 
     marginButon:{

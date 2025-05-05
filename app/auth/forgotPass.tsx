@@ -24,8 +24,7 @@ export default function ForgotPass(){
                 <Text style={registerStyle.subTitle}>Provide the email address associated with your account to recover your password</Text>
               </View>
               <View style={forgotPassStyle.saisie}> 
-                <CustomInput placeholder={"Email"} keyboardType="email-address"/>
-                <FontAwesome6 name="envelope" size={24} color="#465964" style={{position:"absolute", right:10}}/>
+                <CustomInput placeholder={"Email"} keyboardType="email-address" name="envelope"/>
               </View>
                 <TouchableOpacity style={[FormStyle.mybtn,registerStyle.marginButon]}>
                   <Text style={FormStyle.textbtn}>Send Email</Text>

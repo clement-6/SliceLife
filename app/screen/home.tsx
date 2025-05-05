@@ -1,8 +1,11 @@
-import {  Text, TextInput, View, FlatList } from 'react-native';
+import {  Text, TextInput, View, FlatList, ScrollView } from 'react-native';
 import { homeStyle } from '../style/homeStyle';
 import { Ionicons } from '@expo/vector-icons';
 import { DATA } from '../data/data';
 import ItemComponent from '../components/itemComponent';
+import { CITY_DATA } from '../data/cityData';
+import CityComponents from '../components/cityComponents';
+
 
 
 
@@ -25,10 +28,24 @@ export default function Home() {
                     <ItemComponent item={item.title} source={item.source}/>
                 )}
                 horizontal={true}
-                keyExtractor={(item,index) => index.toString()}
+                keyExtractor={(item) => item.id}
                 showsHorizontalScrollIndicator={false}
+                style={homeStyle.list}
                 />
+                
                 <Text style={homeStyle.text}>Maids by City</Text>
+
+                <FlatList
+                data={CITY_DATA}
+                keyExtractor={(item) => item.id}
+                numColumns={2}
+                showsVerticalScrollIndicator={false}
+                renderItem={({item}) => (
+                    <CityComponents item={item.title} source={item.source}/>
+                )}
+                style={{marginLeft:12, marginRight:12}}
+                />
+                
         </View>
     );
 }
