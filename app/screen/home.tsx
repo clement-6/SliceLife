@@ -43,7 +43,7 @@ export default function Home() {
                 renderItem={({item}) => (
                     <CityComponents item={item.title} source={item.source}/>
                 )}
-                style={{marginLeft:12, marginRight:12}}
+                style={{paddingBottom: 20}}
                 />
                 
         </View>

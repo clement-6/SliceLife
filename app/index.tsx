@@ -1,9 +1,10 @@
 import  React,{useState} from "react";
-import { Text, TouchableOpacity, View, Image, ImageBackground, StatusBar } from "react-native";
+import { Text, TouchableOpacity, View, Image, ImageBackground } from "react-native";
 import { indexStyle } from "@/app/style/indexStyle";
 import { commonStyle } from "@/app/style/commonStyle";
 import { back } from "@/app/components/backImage";
 import * as Router from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 
 
 const image = require('../assets/images/Espace_Salarie.png');
@@ -20,7 +21,7 @@ export default function HomeScreen() {
       resizeMode="cover"
       style={indexStyle.image}
     >
-      <StatusBar backgroundColor='#dbedef'/>
+      <StatusBar backgroundColor='#dbedef'/> 
       <View style={commonStyle.tabscontent}>
         <View style={{ marginTop: 25 }}>
           <Image style={indexStyle.image_header} source={image} />

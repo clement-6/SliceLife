@@ -1,4 +1,4 @@
-import { ImageBackground, View, Text, Platform, TouchableOpacity, KeyboardAvoidingView } from "react-native";
+import { ImageBackground, View, Text, Platform, TouchableOpacity, KeyboardAvoidingView, StatusBar } from "react-native";
 import { indexStyle } from "@/app/style/indexStyle";
 import { back } from "@/app/components/backImage";
 import {commonStyle} from "@/app/style/commonStyle";
@@ -19,6 +19,7 @@ export default function Login() {
           source={back.BLUEKMER}
           resizeMode="cover" 
           style={indexStyle.image}>
+            <StatusBar backgroundColor='#dbedef'/>
             <View style={commonStyle.tabscontent}>
               <View style={FormStyle.viewTitle}>
                 <Text style={FormStyle.textTitle}>Login here</Text>

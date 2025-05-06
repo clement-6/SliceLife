@@ -43,14 +43,14 @@ export const homeStyle= StyleSheet.create({
      text:{
         fontWeight: "600",
         textAlign: 'left',
-        width: Platform.OS === 'ios' ? 350 : 375,
+        width: Platform.OS === 'ios' ? 350 : screen*0.9,
         fontSize: 25,
         color: Colors.textColors,
         marginTop: 20
      },
 
      input:{
-        width: Platform.OS === 'ios' ? 350 : 380,
+        width: Platform.OS === 'ios' ? 350 : screen*0.9,
         height: 50,
         borderRadius: 10,
         backgroundColor: "#f5f5f5",
@@ -84,18 +84,27 @@ export const homeStyle= StyleSheet.create({
     },
 
     cityCard: {
-        borderWidth: 1,
         borderRadius: 10,
         alignItems: 'center',
-        padding: 10,
-        margin: 8  
+        margin: 5 ,
+        elevation: 5
     },
 
     imageCard:{
-        width: screen*0.4,
+        width: screen*0.45,
         height:120,
         resizeMode: 'cover',
-    }
+        borderRadius: 10,
+    },
+
+    cityText: {
+      position : 'absolute',
+      bottom: 12,
+      left: 12,
+      color: '#fff',
+      fontWeight: '900',
+      fontFamily: 'Times New Roman',
+    },
 
 
 

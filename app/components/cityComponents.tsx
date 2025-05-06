@@ -11,7 +11,7 @@ const CityComponents = ({item,source}:CityProps) => {
   return (
     <TouchableOpacity style={homeStyle.cityCard}>
       <Image source={source} style={homeStyle.imageCard}/>
-      <Text>{item}</Text>
+      <Text style={homeStyle.cityText}>{item}</Text>
     </TouchableOpacity>
   )
 }
