@@ -1,10 +1,10 @@
 import {  Text, TextInput, View, FlatList, ScrollView } from 'react-native';
-import { homeStyle } from '../style/homeStyle';
+import { homeStyle } from '../../style/homeStyle';
 import { Ionicons } from '@expo/vector-icons';
-import { DATA } from '../data/data';
-import ItemComponent from '../components/itemComponent';
-import { CITY_DATA } from '../data/cityData';
-import CityComponents from '../components/cityComponents';
+import { DATA } from '../../data/data';
+import ItemComponent from '../../components/itemComponent';
+import { CITY_DATA } from '../../data/cityData';
+import CityComponents from '../../components/cityComponents';
 
 
 
