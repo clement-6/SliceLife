@@ -13,6 +13,7 @@ export const homeStyle= StyleSheet.create({
     container:{
         flex: 1,
         ...content,
+        justifyContent: 'center',
         backgroundColor: '#fff'
         
         

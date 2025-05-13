@@ -9,10 +9,10 @@ interface CityProps {
 
 const CityComponents = ({item,source}:CityProps) => {
   return (
-    <TouchableOpacity style={homeStyle.cityCard}>
+    <View style={homeStyle.cityCard}>
       <Image source={source} style={homeStyle.imageCard}/>
       <Text style={homeStyle.cityText}>{item}</Text>
-    </TouchableOpacity>
+    </View>
   )
 }
 
