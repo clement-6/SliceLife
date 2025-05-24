@@ -52,7 +52,7 @@ export default function Layout () {
             }, 
             
             headerLeft: () => (<BackComponent />),
-            headerLeftContainerStyle: {left: 20},
+            headerLeftContainerStyle: {left: 15},
           }
         }
       />
@@ -65,9 +65,8 @@ export default function Layout () {
           { 
             display: "none" 
           }, 
-          
           headerLeft: () => (<BackComponent />),
-          headerLeftContainerStyle: {left: 20},
+          headerLeftContainerStyle: {left: 15},
           }
           } 
           />
@@ -80,7 +79,7 @@ export default function Layout () {
               display: "none" 
             }, 
           headerLeft: () => (<BackComponent />),
-          headerLeftContainerStyle: {left: 20},
+          headerLeftContainerStyle: {left: 15},
         }
       }
       />

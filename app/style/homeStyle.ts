@@ -86,6 +86,7 @@ export const homeStyle= StyleSheet.create({
 
     cityCard: {
         borderRadius: 10,
+        overflow: 'hidden',
         alignItems: 'center',
         margin: 5 ,
         elevation: 5
@@ -96,6 +97,7 @@ export const homeStyle= StyleSheet.create({
         height:120,
         resizeMode: 'cover',
         borderRadius: 10,
+        overflow: 'hidden',
     },
 
     cityText: {
