@@ -11,15 +11,17 @@ const router = useRouter();
 
 const handleAlert = () => {
   Alert.alert("Password Changed!", "Your password has been changed successfully.",[
+    {text: "Cancel", style: "cancel"},
     {text: "OK", onPress: () => router.navigate('/auth/login')},
+    
   ]
 );
 }
 
 const ChangePassword = () => {
   return (
-    <View style={style.contain}>
-      <View style={style.header}>
+    <View style={userStyler.container}>
+      <View style={userStyler.header}>
         <Text style={userStyler.title}>Change Password</Text>
         <Text style={userStyler.subtitle}>Update your password</Text>
       </View>
@@ -41,17 +43,10 @@ const ChangePassword = () => {
 export default ChangePassword
 
 export const style = StyleSheet.create({
-  contain: {
-    flex: 1,
-    backgroundColor: "white",
-  },
-  header: {
-    marginVertical: 60,
-    marginHorizontal: 20
-  },
+ 
   mybtn:{
     backgroundColor: Colors.commonColors,
-    width: Platform.OS === 'ios' ? width * 0.8 : width * 0.9,
+    width:  width * 0.9,
     height: 50,
     alignItems: "center",
     justifyContent: "center",

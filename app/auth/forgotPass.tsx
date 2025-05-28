@@ -1,4 +1,4 @@
-import { ImageBackground, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform, Image } from "react-native";
+import { ImageBackground, View, Text, TouchableOpacity, KeyboardAvoidingView, Platform, Image, StatusBar } from "react-native";
 import { indexStyle } from "@/app/style/indexStyle";
 import { back } from "@/app/components/backImage";
 import { FormStyle } from "@/app/style/formstyle";
@@ -13,6 +13,7 @@ import { FontAwesome6 } from '@expo/vector-icons';
 export default function ForgotPass(){
     return(
       <KeyboardAvoidingView style={{flex:1}} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+        <StatusBar backgroundColor='#dbedef' barStyle='dark-content'/>
         <ImageBackground
           source={back.BLUEKMER}
           resizeMode="cover"

@@ -41,7 +41,7 @@ export const style = StyleSheet.create({
   
       input:{
           borderColor: Colors.commonColors,
-          width: Platform.OS === 'ios' ? width * 0.8 : width * 0.9,
+          width: width * 0.9,
           height: 50,
           borderRadius: 10,
           backgroundColor: "#ECECEC",

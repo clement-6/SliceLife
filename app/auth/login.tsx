@@ -14,12 +14,14 @@ export default function Login() {
   const router = Router.useRouter();
   
     return (
+      
       <KeyboardAvoidingView style={{flex:1}} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+        <StatusBar backgroundColor='#dbedef' barStyle='dark-content'/>
      <ImageBackground
           source={back.BLUEKMER}
           resizeMode="cover" 
           style={indexStyle.image}>
-            <StatusBar backgroundColor='#dbedef'/>
+            
             <View style={commonStyle.tabscontent}>
               <View style={FormStyle.viewTitle}>
                 <Text style={FormStyle.textTitle}>Login here</Text>
